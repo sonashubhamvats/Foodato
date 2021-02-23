@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".delivaeryManOrderPending"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="359dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="38dp"
+        android:text="Orders"
+        android:textColor="#ffff"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dbOrderPrompt"
+        android:layout_width="348dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="41dp"
+        android:text="No orders for now!!"
+        android:textColor="#ff4969"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <ListView
+        android:id="@+id/dblistofordersPending"
+        android:layout_width="349dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="22dp"
+        android:background="@drawable/custom_listview"
+        android:layout_marginEnd="44dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dbOrderPrompt" />
+
+    <Button
+        android:id="@+id/dbRefreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button"
+
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="84dp"
+        android:onClick="OnClickOfRefreshdb"
+        android:text="Refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dbdone"
+        app:layout_constraintTop_toBottomOf="@+id/dblistofordersPending" />
+
+    <Button
+        android:id="@+id/dbdone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textColor="#ffff"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button"
+
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="82dp"
+        android:onClick="onClickOfDonedb"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dblistofordersPending" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

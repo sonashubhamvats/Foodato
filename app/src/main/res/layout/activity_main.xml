@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="159dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="219dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/customusernameicon"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="78dp"
+        android:ems="10"
+        android:hint="Username?"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="300dp"
+        android:drawableStart="@drawable/custompasswordicon"
+        android:layout_height="50dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+
+        android:background="@drawable/custom_input"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="12dp"
+        android:layout_marginEnd="78dp"
+        android:ems="10"
+        android:hint="Password?"
+        android:inputType="textPersonName|textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="172dp"
+        android:layout_height="54dp"
+
+        android:layout_marginStart="242dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="5dp"
+        android:text="Register your restaurant-"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="307dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="133dp"
+        android:background="@drawable/custom_button"
+        android:onClick="onRegisterRequest"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="72dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:background="@drawable/custom_button"
+            android:textAllCaps="false"
+            android:onClick="LogInFromButton"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:layout_marginStart="130sp"
+            android:textColor="#ffff"
+            android:textAllCaps="false"
+            android:onClick="onSignInRequest"
+            android:text="SignUp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

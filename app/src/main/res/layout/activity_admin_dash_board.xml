@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDashBoard"
+    android:background="@drawable/background">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="288dp"
+        android:layout_height="446dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="64dp"
+        android:gravity="center"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/adminOrderPemndingDash"
+            android:layout_width="120sp"
+            android:layout_height="120dp"
+            android:layout_margin="10sp"
+            android:background="@drawable/custom_button"
+            android:onClick="OnClickOfOrderPending"
+            android:text="Order Pending"
+
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/adminAddToTheMenuButtonDash"
+            android:layout_width="120sp"
+            android:layout_height="120dp"
+            android:layout_margin="10sp"
+            android:background="@drawable/custom_button"
+            android:onClick="OnClickOfAddMenuAdmin"
+
+            android:text="Add Menu Item"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/adminProfileButtonDash"
+            android:layout_width="120sp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="12sp"
+
+            android:background="@drawable/custom_button"
+            android:onClick="OnClickOfProfileAdmin"
+            android:text="Profile"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/adminOrderDoneDash"
+            android:layout_width="120sp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="12sp"
+
+            android:background="@drawable/custom_button"
+            android:onClick="OnClickOfOrderDone"
+            android:text="Order Done"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/adminOrderProcessingDash"
+            android:layout_width="120sp"
+            android:layout_height="120dp"
+            android:layout_margin="10sp"
+            android:background="@drawable/custom_button"
+            android:onClick="OnClickOfOrderProcessing"
+
+            android:text="Order Processing"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/adminOrderOutForDelivery"
+            android:layout_width="120sp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10sp"
+
+            android:layout_marginTop="4sp"
+            android:background="@drawable/custom_button"
+            android:onClick="OnClickOfOrderOutforDelivery"
+            android:text="Order Out \nFor Delivery"
+
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="13sp"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="400dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="11dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/adminDashWelcomeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_margin="12sp"
+            android:text="Welcome Username"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/adminDashRestaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_margin="12sp"
+            android:text="Restaurant Name"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

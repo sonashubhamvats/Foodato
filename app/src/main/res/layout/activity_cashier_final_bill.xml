@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CashierFinalBill"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="171dp"
+        android:text="Final Bill"
+        android:textColor="#fff"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cashierfinalBill"
+        android:layout_width="365dp"
+        android:layout_height="429dp"
+        android:layout_marginStart="19dp"
+        android:background="@drawable/custom_text_view"
+        android:padding="15sp"
+
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="27dp"
+        android:text="//Address//"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/cashierproceedfinalBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/custom_button"
+        android:onClick="OnClickOfProceedInFinalBillCashier"
+
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cashierfinalBill" />
+</androidx.constraintlayout.widget.ConstraintLayout>

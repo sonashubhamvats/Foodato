@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryManProfile"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="108dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="136dp"
+        android:background="@drawable/profilepart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dbTxtProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="235dp"
+        android:text="Profile-"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/dbnameprofile"
+        android:layout_width="380sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="12dp"
+        android:text="Username- Sona Shubham Vats"
+        android:textColor="#ff4969"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dbTxtProfile" />
+
+    <TextView
+        android:id="@+id/dbroleprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="186dp"
+        android:text="Role- Delivery Man"
+        android:textColor="#ff4969"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dbnameprofile" />
+
+    <TextView
+        android:id="@+id/dbcurrentRestname"
+        android:layout_width="369dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="23dp"
+        android:text="Restaurant Name- VIT University"
+        android:textColor="#ff4969"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dbroleprofile" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="134dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dbcurrentRestname">
+
+
+        <Button
+            android:id="@+id/dbLogOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="#ffff"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+            android:layout_weight="1"
+            android:onClick="onClickOfLogOutdb"
+            android:text="LogOut" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

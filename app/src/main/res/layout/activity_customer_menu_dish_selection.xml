@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerMenuDishSelection"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/txtcustmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="292dp"
+        android:text="Menu"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtcustMenuRestname"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="45dp"
+        android:text="Restaurant Name-"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcustmenu" />
+
+    <TextView
+        android:id="@+id/txtcustPrompt"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="43dp"
+        android:text="No menu available-"
+        android:textColor="#ff4969"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcustMenuRestname" />
+
+    <ListView
+        android:id="@+id/custMenuList"
+        android:layout_width="360dp"
+        android:layout_height="384dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/custom_listview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcustPrompt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

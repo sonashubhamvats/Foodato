@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restaurant_management_20">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DeliveryBoyAddressView"></activity>
+        <activity
+            android:name=".delivaeryManOrderPending"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DeliveryManProfile"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DeliveryBoyDashBoard"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ChefOrderSelection"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ChefProfile"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ChefDashboard"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CashierNotifications"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CashierFinalBill"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CashierTempOrderSummary"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CashierChooseDishFromMenu"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CashierProfile"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CashierDashboard"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdminOrderOutForDelivery"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdminOderDone"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdminOrderPending"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdminOrderProcessing"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdminProfile"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdminCreateMenu"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdminDashBoard"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CustomerFinalBill"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CustomerOrderSummary"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CustomerMenuDishSelection"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CustomerProfile"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".OrderStatusCustomer"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CustomerDashBoard"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CustomerChooseRest"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MessageActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SignUp"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Registration"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/back4app_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/back4app_client_key" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

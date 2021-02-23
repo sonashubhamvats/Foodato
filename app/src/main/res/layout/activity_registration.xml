@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="366dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:paddingStart="15sp"
+                android:background="@drawable/custom_input"
+                android:textColor="#ff4969"
+
+                android:id="@+id/AdminPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:ems="10"
+                android:hint="Enter the common Admin password"
+                android:inputType="textPersonName|textPassword" />
+
+            <EditText
+                android:paddingStart="15sp"
+                android:background="@drawable/custom_input"
+                android:textColor="#ff4969"
+
+                android:id="@+id/CashierPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:ems="10"
+                android:hint="Enter the common Cashier password"
+                android:inputType="textPersonName|textPassword" />
+
+            <EditText
+                android:paddingStart="15sp"
+                android:background="@drawable/custom_input"
+                android:textColor="#ff4969"
+
+                android:id="@+id/ChefPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:ems="10"
+                android:hint="Enter the common Chef password"
+                android:inputType="textPersonName|textPassword" />
+
+            <EditText
+                android:paddingStart="15sp"
+                android:background="@drawable/custom_input"
+                android:textColor="#ff4969"
+
+                android:id="@+id/DeliveryPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:ems="10"
+                android:hint="Enter the common Delivery Man password"
+                android:inputType="textPersonName|textPassword" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="349dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="36dp"
+        android:text="Registration"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="366dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_text_view"
+        android:padding="4sp"
+        android:text="As you are registering you will be considered as an Admin"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="329dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/custom_text_view"
+        android:padding="5sp"
+        android:text="Enter the list of common passwords "
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="#ffff"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button"
+        android:onClick="onClickOfRegister"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="346dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="55dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+
+            android:paddingStart="15sp"
+            android:textColor="#ff4969" />
+
+        <EditText
+            android:id="@+id/restname"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Restaurant's name"
+            android:inputType="textPersonName"
+            android:paddingStart="15sp"
+            android:textColor="#ff4969" />
+
+        <EditText
+            android:id="@+id/personalAdminPassword"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Enter your personal password"
+            android:inputType="textPersonName|textPassword"
+            android:paddingStart="15sp"
+            android:textColor="#ff4969" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

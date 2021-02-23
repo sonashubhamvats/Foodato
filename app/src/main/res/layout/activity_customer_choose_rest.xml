@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerChooseRest"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/custWelcomeMessageRestChoose"
+        android:layout_width="345dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="33dp"
+        android:text="Welcome Sona!!"
+        android:textColor="#ffff"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="190dp"
+        android:text="Care to choose a Restaurant?"
+        android:textColor="#ff4969"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custWelcomeMessageRestChoose" />
+
+    <Spinner
+        android:id="@+id/custRestSelectionSpinner"
+        android:layout_width="300dp"
+
+        android:layout_height="40dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="78dp"
+        android:background="@drawable/custom_text_view"
+        android:popupBackground="#ff4969"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx1" />
+
+    <Button
+        android:id="@+id/proceedCustRestselec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="159dp"
+        android:background="@drawable/custom_button"
+        android:onClick="OnClickOfProceedInTheChooseRestName"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custRestSelectionSpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

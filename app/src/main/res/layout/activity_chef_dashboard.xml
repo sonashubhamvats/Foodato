@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChefDashboard"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/chefRestnameDashboard"
+        android:layout_width="388dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="9dp"
+        android:text="VIT-Restaurant"
+        android:textColor="#ffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chefusernameDashboard"
+        android:layout_width="388dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="9dp"
+        android:text="Hello Sona!!"
+        android:textColor="#ffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefRestnameDashboard" />
+
+    <TextView
+        android:id="@+id/txtdash"
+        android:layout_width="388dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="7dp"
+        android:text="Dashboard"
+        android:textColor="#ffff"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chefusernameDashboard" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="406dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="170dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdash">
+
+        <Button
+            android:id="@+id/chefProfile"
+            android:layout_width="100dp"
+            android:layout_height="175dp"
+            android:layout_marginHorizontal="20sp"
+            android:textColor="#ffff"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+
+            android:layout_weight="1"
+            android:onClick="OnclickOfProfileChef"
+            android:text="Profile" />
+
+        <Button
+            android:id="@+id/chefOrderStatusButton"
+            android:layout_width="100dp"
+            android:layout_height="175dp"
+            android:layout_marginHorizontal="20sp"
+            android:textColor="#ffff"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+
+            android:layout_weight="1"
+            android:onClick="OnClickOfOrderChef"
+            android:text="Orders for you" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

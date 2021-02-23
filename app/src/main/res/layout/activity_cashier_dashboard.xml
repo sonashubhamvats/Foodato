@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CashierDashboard"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/cashierRestnameDashboard"
+        android:layout_width="388dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="9dp"
+        android:text="VIT-Restaurant"
+        android:textColor="#ffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cashierusernameDashboard"
+        android:layout_width="388dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="9dp"
+        android:text="Hello Sona!!"
+        android:textColor="#ffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cashierRestnameDashboard" />
+
+    <TextView
+        android:id="@+id/txtdashcashier"
+        android:layout_width="388dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="7dp"
+        android:text="Dashboard"
+        android:textColor="#ffff"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cashierusernameDashboard" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="406dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdashcashier">
+
+        <Button
+            android:id="@+id/cashierOrder"
+            android:layout_width="100dp"
+            android:layout_height="175dp"
+            android:layout_marginHorizontal="20sp"
+            android:textColor="#ffff"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+
+            android:layout_weight="1"
+            android:onClick="OnClickOfOrderCashier"
+            android:text="Order" />
+
+        <Button
+            android:id="@+id/cashierViewNotificationsButton"
+            android:layout_width="100dp"
+            android:layout_height="175dp"
+            android:textColor="#ffff"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+
+            android:layout_marginHorizontal="20sp"
+            android:layout_weight="1"
+            android:onClick="ViewOrderStatusCashier"
+            android:text="View Notifications" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cashierProfileButton"
+        android:layout_width="162dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="88dp"
+
+        android:background="@drawable/custom_button"
+        android:onClick="OnclickOfProfileCashier"
+        android:text="Profile"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

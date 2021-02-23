@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CashierNotifications"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/txtorderstatuscashier"
+        android:layout_width="384dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="14dp"
+        android:text="Your Order Status-"
+        android:textColor="#fff"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cashierpromptorderstatus"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="14dp"
+        android:text="No notifications"
+        android:textColor="#ff4969"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtorderstatuscashier" />
+
+    <ListView
+        android:id="@+id/cashierListOrderStatus"
+        android:layout_width="379dp"
+        android:layout_height="324dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_listview"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cashierpromptorderstatus" />
+
+    <Button
+        android:id="@+id/cashierOrderStatusRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="RefreshCashierPendingNoti"
+        android:textColor="#ffff"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button"
+        android:text="Refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cashierListOrderStatus" />
+
+    <Button
+        android:id="@+id/cashierOrderStatusDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="56dp"
+        android:textColor="#ffff"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button"
+        android:onClick="deleteNotiCash"
+        android:text="Delete"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cashierOrderStatusRefresh"
+        app:layout_constraintTop_toBottomOf="@+id/cashierListOrderStatus" />
+</androidx.constraintlayout.widget.ConstraintLayout>

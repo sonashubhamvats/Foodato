@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminProfile"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="107dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/profilepart"
+        app:layout_constraintBottom_toTopOf="@+id/adminTxtProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adminTxtProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="235dp"
+        android:text="Profile-"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/adminameprofile"
+        android:layout_width="387dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:text="Username- Sona Shubham Vats"
+        android:textColor="#ff4969"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminTxtProfile" />
+
+    <TextView
+        android:id="@+id/adminroleprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="260dp"
+        android:text="Role- Admin"
+        android:textColor="#ff4969"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminameprofile" />
+
+    <TextView
+        android:id="@+id/admincurrentRestname"
+        android:layout_width="389dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:text="Restaurant Name- VIT University"
+        android:textColor="#ff4969"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminroleprofile" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="134dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admincurrentRestname">
+
+        <Button
+            android:id="@+id/adminLogOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:onClick="onClickOfLogOutAdmin"
+            android:text="LogOut" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
