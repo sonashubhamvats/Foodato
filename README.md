@@ -25,6 +25,5 @@ password that the admin must have set in for that role for that restaurant.**Als
 
 Now for the most powerful entity- the admin- the admin can moniter all the processes happening in the restaurant and can also edit the menu of the restaurant.
 
-Here are some screen shots of the app-
 
 
