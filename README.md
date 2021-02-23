@@ -13,7 +13,7 @@ In the zomato app we see that it supports for the major part only the functional
 2.To sign in the person needs to feed in his/her username/password , the name of the organization and the role under which they are registering themselves in and also the common 
 password that the admin must have set in for that role for that restaurant.**Also note that for a customer a common password is not needed**
 <br>
-![](images/img2.jpg)
+![](images/img2.jpeg)
 <br>
 **Now for the app there are mainly two functionalities-**<br>
 1.Online orders-<br>
