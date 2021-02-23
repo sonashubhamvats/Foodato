@@ -1,4 +1,4 @@
-# Zomato-Clone-Foodato
+# Foodato
 # This is an app which i made in a span of a week and through which i have tried to clone a possible rugged version of zomato app but with some added functionalities.
 **For storing the information about all the entities and to create all the data tables i have used parse in the project**
 
