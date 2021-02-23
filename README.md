@@ -1,5 +1,5 @@
 # Foodato
-# This is an app which i made in a span of a week and through which i have tried to clone a possible rugged version of zomato app but with some added functionalities.
+# This is an app which i made in a span of a week and through which i have tried to clone a possible rugged version of a restaurant management app but with some added functionalities.
 **For storing the information about all the entities and to create all the data tables i have used parse in the project**
 
 In the zomato app we see that it supports for the major part only the functionality that helps the customer to place the order whiile through my app i had aimed to also include a restaurant management system in the app with the added functionality to support the customer needs.<br>
