@@ -4,7 +4,7 @@ This is an app which i made in a span of a week and through which i have tried t
 
 In the zomato app we see that it supports for the major part only the functionality that helps the customer to place the order whiile through my app i had aimed to also include a restaurant management system in the app with the added functionality to support the customer needs.<br>
 
-1.So to register a restaunrant any admin can register one using the option present in the landing page of the app, there the person is required to set his/her id and password , the name of the restaurant and for all the entities in the restaunrant like a delivery boy, cashier, chef a common password which they will have to use to sign in into thier accounts.<br>
+1.So to register a restaurant any admin can register one using the option present in the landing page of the app, there the person is required to set his/her id and password , the name of the restaurant and for all the entities in the restaunrant like a delivery boy, cashier, chef a common password which they will have to use to sign in into thier accounts.<br>
 2.To sign in the person needs to feed in his/her username/password , the name of the organization and the role under which they are registering themselves in and also the common 
 password that the admin must have set in for that role for that restaurant.**Also note that for a customer a common password is not needed**
 <br>
