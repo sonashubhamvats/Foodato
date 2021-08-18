@@ -1,5 +1,5 @@
 # Foodato
-# This is an app which i made in a span of a week and through which i have tried to clone a possible rugged version of a restaurant management app but with some added interesting functionalities.
+
 **For storing the information about all the entities and to create all the data tables i have used parse in the project**
 
 In most of the online food delivery services app, we see that they support functionality that helps the customer to place the order whiile through my app i had aimed to also include a restaurant management system in the app with the added functionality to support the customer needs.<br>
